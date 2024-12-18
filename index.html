@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="icon" type="img" href="img/icon.png">
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Green day</title>
+</head>
+<body>
+
+   
+
+    <!-- Navbar start-->
+      <Nav class="navbar">
+        <div class="logo">
+            <a href="#home"><img src="img/icon.png" alt="" width="150px"></a>
+        </div>
+        <div class="navbar-nav" id="navbar-nav">
+            <a href="#home" >Home</a>
+            <div class="dropdown">
+                <a href="#about">About</a>
+                <div class="isi-dropdown">
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Partner</a></li>
+                        <li><a href="#">Who Are We?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#event" >Events</a>
+            <a href="#tickets" >Tickets</a>
+            <a href="#contact" >Contact</a>
+
+
+            <div id="DisplayClock" class="clock" onload="showTime()"></div>
+
+        </div>
+
+        <div id="menu" class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </Nav>
+    <!-- navbar end -->
+
+
+
+    <!-- hero start -->
+    <section>
+        <div class="hero-section" id="home">
+           <div class="hero-content">
+            <h1>Green Day</h1>
+            <p>Make <span>"Pop Punk"</span> Great Again.</p>
+           </div>
+        </div>
+    </section>
+    <!-- hero end -->
+
+
+
+    <!-- about section start-->
+    <section>
+        <div class="about" id="about">   
+           <div class="about-tittle">
+            <h3>About Us</h3>
+           </div>
+
+           <div class="about-content">
+            <p>Green Day adalah band punk rock asal Amerika yang dibentuk pada tahun 1986 di Berkeley, California. Band ini terdiri dari trio Billie Joe Armstrong, Mike Dirnt, dan Tré Cool. Green Day sangat diakui karena keberhasilan mereka dalam membuat genre punk rock kembali terkenal, bersama-sama dengan Sublime, The Offspring, dan Rancid</p>
+           </div>
+
+           <!-- <p>countdown</p>
+           <p id="jam" ></p><p id="menit"></p><p id="detik"></p> -->
+
+
+           <div class="about-date">
+            <p>1986—sekarang</p>
+           </div>
+        </div>     
+    </section>
+    <!-- about section end -->
+
+
+    <!-- Event Section Start -->
+    <section>
+        <div class="event" id="event">
+
+            <div class="event-tittle">
+                <h3>Tour</h3>
+            </div>
+
+            <div class="event-slider">
+                <div class="container">
+                    <div class="arrow l " onclick="prev()">
+                        <img src="img/arrow/l.png" alt="">
+                    </div>
+                    <div class="slide slide-1">
+                        <div class="caption">
+                            <h3>Jakarta, Indonesia</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="slide slide-2">
+                        <div class="caption">
+                            <h3>Kuala Lumpur, Malaysia</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="slide slide-3">
+                        <div class="caption">
+                            <h3>Sydney, Australia</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="arrow r" onclick="next()">
+                        <img src="img/arrow/r.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-subtittle">
+                <h3>Album</h3>
+            </div>
+
+            <div class="event-gueststar">
+                <div class="gueststar">
+                    <div class="img">
+                        <img src="img/download.jpeg" alt="Bob marley">
+                    </div>
+                    <div class="g-container">
+                        <div class="g-tittle">
+                            <h4>American Idiot</h4>
+                        </div>
+        
+                        <div class="g-content">
+                            <p>American Idiot adalah album studio ketujuh dari band Green Day. Album ini dirilis pada 21 September 2004 melalui label Reprise Records dan diproduseri oleh Rob Cavallo. Album ini mulai direkam di Studio 880, Oakland, California, dan diselesaikan di Los Angeles.</p>
+                        </div>
+        
+                        <div class="g-button">
+                            <a target="_blank" href="https://open.spotify.com/album/5dN7F9DV0Qg1XRdIgW8rke?autoplay=true">Listen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gueststar">
+                    <div class="img">
+                        <img src="img/download2.jpeg" alt="Michael Jackson">
+                    </div>
+                    <div class="g-container">
+                        <div class="g-tittle">
+                            <h4>Dookie</h4>
+                        </div>
+    
+                        <div class="g-content">
+                            <p>Dookie adalah album studio ketiga karya Green Day. Album ini dirilis pada 1 Februari 1994 melalui Reprise Records. Album ini merupakan kolaborasi pertama Green Day dengan Rob Cavallo sekaligus menjadi album major label pertama mereka.</p>
+                        </div>
+    
+                        <div class="g-button">
+                            <a target="_blank" href="https://open.spotify.com/intl-id/album/4uG8q3GPuWHQlRbswMIRS6">Listen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gueststar">
+                    <div class="img">
+                        <img src="img/download2.jpeg" alt="Freddie Mercury">
+                    </div>
+                    <div class="g-container">
+                        <div class="g-tittle">
+                            <h4>Saviors</h4>
+                        </div>
+    
+                        <div class="g-content">
+                            <p>Diterjemahkan dari bahasa Inggris-Saviors adalah album studio keempat belas oleh band rock Amerika Green Day, dirilis pada 19 Januari 2024 melalui Reprise Records. Film ini umumnya mendapat ulasan positif dari para kritikus.</p>
+                        </div>
+    
+                        <div class="g-button">
+                            <a target="_blank" href="https://open.spotify.com/album/4AIeqAMDyIT884A9uA2A0i?autoplay=true">Listen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section end -->
+
+
+    <!-- Tickets section start -->
+    <section>
+        <div class="tickets" id="tickets">
+            <div class="ticket-tittle">
+                <h3>Tickets</h3>
+            </div>
+            <div class="ticket-parent">
+                <div class="ticket1">
+                    <div class="ticket-img">
+                        <img src="img/tiket.png" alt="">
+                    </div>
+                    <div class="ticket-content1">
+                        <h4>Jakarta Tour</h4>
+                        <p>IDR 250.000,00</p>
+                        <button>Buy Here</button>
+                    </div>
+                </div>
+
+                <div class="ticket2">
+                    <div class="ticket-content2">
+                        <h4>Malaysia Tour</h4>
+                        <p>IDR 450.000,00</p>
+                        <button>Buy Here</button>
+                    </div>
+                    <div class="ticket-img">
+                        <img src="img/tiket.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tickets section end -->
+
+
+    <!-- contact section start -->
+    <section>
+        <div class="contact" id="contact">
+            <div class="contact-tittle">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="contact-content">
+                <div class="contact-paragraf">
+                    <p>Untuk informasi lengkap terkait Event bisa hubungi kami melalui:</p>
+               </div>
+               <div class="button">
+                    <div class="button-email">
+                        <a href="">Email</a>
+                    </div>
+                    <div class="button-whatsapp">
+                        <a href="">WhatsApp</a>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+ 
+    <!-- test -->
+ 
+    <!-- test -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="social">
+            <a target="_blank " href=""><i data-feather="instagram"></i></a>
+            <a target="_blank " href=""><i data-feather="twitter"></i><i></i></a>
+            <a target="_blank " href=""><i data-feather="facebook"></i></a>
+            <a target="_blank " href=""><i data-feather="mail"></i><i></i></a>
+            <a target="_blank " href=""><i data-feather="youtube"></i><i></i></a>
+        </div>
+    
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#event">Event</a>
+            <a href="#tickets">Tickets</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credit">
+            <p>Created by: <a href="#">Irfansyah</a>| &copy; 2024.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <script>
+        feather.replace()
+    </script>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
